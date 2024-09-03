@@ -4,9 +4,19 @@
   margin: 0;
 }
 
+:root {
+  --bright-green: rgba(70, 252, 73, 1);
+  --pink: rgba(235, 70, 252, 1);
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: aqua;
+  background: linear-gradient(180deg, rgba(0, 1, 5, 1) 0%, var(--pink));
+}
+
+.main-content {
+  width: 100vw;
+  height: 100vh;
 }
 
 .main-footer {

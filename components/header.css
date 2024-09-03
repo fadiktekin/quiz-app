@@ -3,6 +3,7 @@
   font-size: 1rem;
   top: 0;
   width: 100%;
-  background-color: lightcoral;
+  background-color: black;
   padding: 20px;
+  color: var(--bright-green);
 }
