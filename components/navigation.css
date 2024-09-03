@@ -1,0 +1,24 @@
+.footer-nav {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-link {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: yellow;
+}
+
+.footer-link:hover {
+  background-color: blueviolet;
+}
+
+.footer-nav-image {
+  width: 50px;
+  height: 50px;
+}
