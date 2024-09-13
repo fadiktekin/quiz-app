@@ -7,18 +7,18 @@
   align-items: center;
 }
 
-.footer-link {
+.footer-nav__link {
   width: 100%;
   height: 100%;
   text-align: center;
   background-color: var(--bright-green);
 }
 
-.footer-link:hover {
+.footer-nav__link:hover {
   background-color: var(--bright-green-fade);
 }
 
-.footer-nav-image {
+.footer-nav__image {
   position: absolute;
   width: 30px;
   height: 30px;
