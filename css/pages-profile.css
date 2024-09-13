@@ -1,21 +1,32 @@
-.profile-section {
+.profile-card {
   position: relative;
   color: black;
-  margin: calc(var(--header-footer-height) + 10px) auto;
-  width: 50%;
-  /* height: 100%; */
-  min-width: 400px;
-  max-width: 600px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
+  align-items: flex-start;
+  gap: 30px;
   background-color: white;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
 }
 
 input {
   width: 100px;
+}
+
+.profile-card__img {
+  border-radius: 50px;
+}
+
+.profile-card__aboutme {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.profile-card__aboutme > div {
+  flex: 1 1 0;
+}
+.profile-card__name {
+  text-align: right;
 }
