@@ -1,5 +1,5 @@
-const maxLength = questionTextArea.getAttribute("maxlength");
 const questionTextArea = document.querySelector("[data-js=question]");
+const maxLength = questionTextArea.getAttribute("maxlength");
 const answerTextArea = document.querySelector("[data-js=answer]");
 const questionCharactersLeft = document.querySelector(
   "[data-js=question__charachers-left]"
