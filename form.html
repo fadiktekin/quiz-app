@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="./js/index.js"></script>
-    <title>Profile</title>
+    <script src="js/form.js" defer></script>
+    <title>Add Card</title>
   </head>
   <body>
     <header>
@@ -13,32 +13,31 @@
     </header>
     <main>
       <section>
-        <article class="profile-card">
-          <div class="profile-card__aboutme">
-            <div>
-              <img
-                class="profile-card__img"
-                src="https://cataas.com/cat"
-                alt="Cat image"
-                width="100px"
-                height="100px"
-              />
-              <h1>About me</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                eu elit diam. Nam iaculis dolor vitae vehicula blandit. Nunc
-                scelerisque euismod justo et eleifend. Pellentesque nec diam
-                elementum quam porta rhoncus molestie et est.
-              </p>
-            </div>
-            <div class="profile-card__name"><h1>Queen Cat</h1></div>
+        <form data-js="add-card-form">
+          <label for="question">Your question:</label>
+          <div>
+            <textarea
+              name="question"
+              id="question"
+              data-js="question"
+              maxlength="150"
+            ></textarea>
+            <small data-js="question__charachers-left"></small>
           </div>
-          <div class="profile-card__setting">
-            <h1>Settings</h1>
-            <label class="switch"></label>
-            Dark mode<input type="checkbox" />
+          <label for="answer">Your answer</label>
+          <div>
+            <textarea
+              name="answer"
+              id="answer"
+              data-js="answer"
+              maxlength="150"
+            ></textarea>
+            <small data-js="answer__charachers-left"></small>
           </div>
-        </article>
+          <label for="tag">Tag:</label>
+          <input type="text" name="tag" id="tag" />
+          <button type="submit">Submit</button>
+        </form>
       </section>
     </main>
     <footer>
@@ -53,21 +52,21 @@
         <a href="bookmarks.html" class="footer-nav__link">
           <img
             class="footer-nav__image"
-            src="resources/bookmark_transparent.png"
+            src="resources/bookmark.png"
             alt="navigation bookmark icon"
           />
         </a>
         <a href="form.html" class="footer-nav__link">
           <img
             class="footer-nav__image"
-            src="resources/add.png"
+            src="resources/add_filled.png"
             alt="navigation bookmark icon"
           />
         </a>
         <a href="profile.html" class="footer-nav__link">
           <img
             class="footer-nav__image"
-            src="resources/profile_filled.png"
+            src="resources/profile.png"
             alt="navitaion profile icon"
           />
         </a>
