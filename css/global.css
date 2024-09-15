@@ -10,9 +10,15 @@
   --pink: rgba(235, 70, 252, 1);
 
   --header-footer-height: 70px;
-  --body-background-color: linear-gradient(
+  --body-background-color-darkmode: linear-gradient(
     180deg,
     rgba(0, 1, 5, 1) 0%,
+    var(--pink)
+  );
+
+  --body-background-color-lightmode: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
     var(--pink)
   );
 }
@@ -24,7 +30,7 @@ body {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: var(--body-background-color);
+  background: var(--body-background-color-lightmode);
 }
 
 main {
@@ -65,7 +71,21 @@ header {
   text-align: center;
   font-size: 1rem;
   top: 0;
-  background-color: black;
+  background-color: white;
   padding: 20px;
   color: var(--bright-green);
+}
+
+summary,
+button {
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
+  list-style: none;
+  padding: 10px;
+  width: 150px;
+  margin: auto;
 }

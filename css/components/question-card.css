@@ -32,6 +32,7 @@
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  word-break: break-all;
   gap: 20px;
 }
 
@@ -46,19 +47,6 @@
   background-color: var(--pink);
   border-radius: 5px;
   padding: 10px;
-}
-
-.question-card__container > details > summary {
-  border-radius: 5px;
-  background-color: black;
-  color: white;
-  border: none;
-  box-shadow: 3px 3px 4px black;
-  cursor: pointer;
-  list-style: none;
-  padding: 10px;
-  width: 150px;
-  margin: auto;
 }
 
 .question-card__container > details > p {

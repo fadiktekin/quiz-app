@@ -9,17 +9,17 @@ const answerCharactersLeft = document.querySelector(
   "[data-js=answer__charachers-left]"
 );
 
-function showCharacterAmountLeft(amountLeft, el) {
-  const left = Number.parseInt(maxLength) - amountLeft;
-  el.innerHTML = `<p>${left} characters left</p>`;
+function showCharactersAmountLeft(currentCharacterLength, element) {
+  const amountLeft = Number.parseInt(maxLength) - currentCharacterLength;
+  element.innerHTML = `<p>${amountLeft} characters left</p>`;
 }
 
 questionTextArea.addEventListener("input", (event) => {
-  showCharacterAmountLeft(event.target.value.length, questionCharactersLeft);
+  showCharactersAmountLeft(event.target.value.length, questionCharactersLeft);
 });
 
 answerTextArea.addEventListener("input", (event) => {
-  showCharacterAmountLeft(event.target.value.length, answerCharactersLeft);
+  showCharactersAmountLeft(event.target.value.length, answerCharactersLeft);
 });
 
 const form = document.querySelector("[data-js=add-card-form]");
@@ -44,12 +44,19 @@ form.addEventListener("submit", (event) => {
             <div class="question-card__categories">
               <div class="question-card__tag">#${dataObject.tag}</div>              
             </div>
-          </div>
-          <figure>
+          </div>          
             <img
               data-js="question-card__bookmark"
               class="question-card__bookmark --not-selected"
               alt="bookmark"
             />
-          </figure>`;
+          `;
+
+  const bookmarkIcon = questionCard.querySelector(
+    "[data-js=question-card__bookmark]"
+  );
+  bookmarkIcon.addEventListener("click", (event) => {
+    console.log("HERE?");
+    event.target.classList.toggle("--selected");
+  });
 });
