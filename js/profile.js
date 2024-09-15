@@ -10,5 +10,4 @@ darkModeToggle.addEventListener("input", (event) => {
     body.style.background = "var(--body-background-color-lightmode)";
     header.style.backgroundColor = "white";
   }
-  console.log(body.attributes);
 });
