@@ -56,7 +56,6 @@ form.addEventListener("submit", (event) => {
     "[data-js=question-card__bookmark]"
   );
   bookmarkIcon.addEventListener("click", (event) => {
-    console.log("HERE?");
     event.target.classList.toggle("--selected");
   });
 });
