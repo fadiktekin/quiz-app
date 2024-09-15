@@ -1,4 +1,3 @@
-console.log("loaded js");
 const bookmarkIcons = document.querySelectorAll(
   "[data-js=question-card__bookmark]"
 );

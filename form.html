@@ -14,28 +14,40 @@
     <main>
       <section>
         <form data-js="add-card-form">
-          <label for="question">Your question:</label>
+          <h1>Add new question</h1>
           <div>
-            <textarea
-              name="question"
-              id="question"
-              data-js="question"
-              maxlength="150"
-            ></textarea>
-            <small data-js="question__charachers-left"></small>
+            <label for="question">Your question:</label>
+            <div class="question__textarea">
+              <textarea
+                name="question"
+                id="question"
+                data-js="question"
+                maxlength="150"
+              ></textarea>
+              <small data-js="question__charachers-left"
+                >150 characters left</small
+              >
+            </div>
           </div>
-          <label for="answer">Your answer</label>
+
           <div>
-            <textarea
-              name="answer"
-              id="answer"
-              data-js="answer"
-              maxlength="150"
-            ></textarea>
-            <small data-js="answer__charachers-left"></small>
+            <label for="answer">Your answer:</label>
+            <div class="question__textarea">
+              <textarea
+                name="answer"
+                id="answer"
+                data-js="answer"
+                maxlength="150"
+              ></textarea>
+              <small data-js="answer__charachers-left"
+                >150 characters left</small
+              >
+            </div>
           </div>
-          <label for="tag">Tag:</label>
-          <input type="text" name="tag" id="tag" />
+          <div>
+            <label for="tag">Tag:</label>
+            <input type="text" name="tag" id="tag" />
+          </div>
           <button type="submit">Submit</button>
         </form>
       </section>

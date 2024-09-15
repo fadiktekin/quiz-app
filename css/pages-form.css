@@ -8,5 +8,17 @@ form {
   background-color: white;
   padding: 30px;
   width: 100%;
+  border: 1px solid black;
   border-radius: 10px;
+}
+
+textarea {
+  width: 400px;
+  height: 100px;
+  padding: 5px;
+}
+
+.question__textarea {
+  display: flex;
+  flex-direction: column;
 }
