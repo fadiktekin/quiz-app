@@ -58,4 +58,7 @@ form.addEventListener("submit", (event) => {
   bookmarkIcon.addEventListener("click", (event) => {
     event.target.classList.toggle("--selected");
   });
+
+  event.target.reset();
+  event.target.elements.question.focus();
 });
