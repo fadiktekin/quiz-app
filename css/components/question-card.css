@@ -1,7 +1,5 @@
 .question-card {
   position: relative;
-  height: auto;
-  width: 100%;
 }
 
 .question-card__bookmark {
